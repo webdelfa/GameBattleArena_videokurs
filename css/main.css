@@ -250,3 +250,74 @@
 .games-carousel__indicator:hover::before {
     border-color: #fff;
 }
+
+/* SHEDULE */
+.shedule {}
+
+.shedule__container {}
+
+.events {
+    overflow: hidden;
+}
+
+.events__list {
+    display: flex;
+    column-gap: 20px;
+    counter-reset: event-count;
+}
+
+.events__item {}
+
+.event {
+    width: 263px;
+    flex-shrink: 0;
+    min-height: 280px;
+    overflow: hidden;
+    border: 1px solid #082872;
+    border-radius: 20px;
+    background-color: #011540;
+    box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 22px 25px;
+    position: relative;
+}
+
+.event__img {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 200px;
+}
+
+.event::before {
+    counter-increment: event-count;
+    content: counter(event-count);
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #00369b;
+    top: 18px;
+    left: 11px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.events__item:nth-child(2) .event__img {
+    width: 176px;
+}
+
+.event__info {}
+
+.event__date {
+    font-size: 36px;
+    margin-bottom: 6px;
+}
+
+.event__name {
+    font-size: 24px;
+    color: #79a8ff;
+}
