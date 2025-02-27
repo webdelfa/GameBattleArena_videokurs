@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GameBattle Arena</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/main.css">
@@ -48,6 +48,89 @@
                 </nav>
             </div>
         </header>
+        <main class="main">
+            <section class="welcome section">
+                <div class="container welcome__container">
+                    <div class="welcome__desc">
+                        <h1 class="title">Турнир <br> начинается </h1>
+                        <time datetime="2025-03-01" class="welcome__date">1 марта 2025 года</time>
+                        <a href="#!" class="link welcome__link">Регистрация</a>
+                    </div>
+                    <img class="welcome__img" src="./images/welcome-img.png" alt="игрок с джойстиком в руках">
+                </div>
+            </section>
+            <section class="about section">
+                <div class="container about__container">
+                    <h2 class="section-title">О турнире</h2>
+                    <p class="content-text about__text">
+                        GameBattle Arena — это масштабное соревнование для любителей видеоигр. Покажи свои навыки,
+                        сражайся с лучшими и побеждай!
+                    </p>
+                    <div class="about__images">
+                        <img src="./images/about/about-1.jpg" alt="Люди играют на компьютерах" class="about__img">
+                        <img src="./images/about/about-2.jpg" alt="Джойстик и наушники" class="about__img">
+                    </div>
+                </div>
+            </section>
+            <section class="games section">
+                <div class="container games__container">
+                    <h2 class="section-title">Игры турнира</h2>
+                    <p class="content-text games__content-text">
+                        Выбери свою игру и вступай в бой!
+                    </p>
+                    <div class="games-carousel">
+                        <div class="games-carousel__inner">
+                            <a href="#!" class="game-link">
+                                <img src="./images/games/image-1.jpg" alt="" class="game-link__img">
+                                <div class="game-link__desc">
+                                    Counter-Strike: <br> Global Offensive
+                                </div>
+                            </a>
+                            <a href="#!" class="game-link">
+                                <img src="./images/games/image-2.jpg" alt="" class="game-link__img">
+                                <div class="game-link__desc">
+                                    League <br> of Legends
+                                </div>
+                            </a>
+                            <a href="#!" class="game-link">
+                                <img src="./images/games/image-3.jpg" alt="" class="game-link__img">
+                                <div class="game-link__desc">
+                                    Minecraft: <br> Build Battle
+                                </div>
+                            </a>
+                            <a href="#!" class="game-link">
+                                <img src="./images/games/image-4.jpg" alt="" class="game-link__img">
+                                <div class="game-link__desc">
+                                    Fortnite
+                                </div>
+                            </a>
+                        </div>
+                        <div class="games-carousel__controls">
+                            <button class="games-carousel__control games-carousel__controls--prev">
+                                <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.72242 14.7224L2.00002 8L8.72242 1.2776" stroke="white"
+                                        stroke-width="2.1438" />
+                                </svg>
+                            </button>
+                            <div class="games-carousel__indicators">
+                                <span class="games-carousel__indicator"></span>
+                                <span class="games-carousel__indicator active"></span>
+                                <span class="games-carousel__indicator"></span>
+                                <span class="games-carousel__indicator"></span>
+                            </div>
+                            <button class="games-carousel__control games-carousel__controls--prev">
+                                <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.7224 14.7224L8.44481 8L1.7224 1.2776" stroke="white"
+                                        stroke-width="2.1438" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 

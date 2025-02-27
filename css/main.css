@@ -1,7 +1,9 @@
+/* HEADER */
 .header {
     background-color: rgba(3, 6, 25, 0.19);
     padding: 26px 0px;
     width: 100%;
+    position: absolute;
 }
 
 .header__container {
@@ -55,4 +57,196 @@
     .header__menu-link:active {
         color: #79a8ff;
     }
+}
+
+/* WELCOME */
+.welcome {
+    background-image: url(../images/welcome-bg.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 137px;
+    min-height: 550px;
+}
+
+.welcome__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome__desc {
+    padding-top: 55px;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 76px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: 1px #79a8ff;
+    text-shadow: 0 0 9px #0072ff;
+}
+
+.welcome__date {
+    display: block;
+    margin-bottom: 47px;
+    font-size: 35px;
+    color: #79a8ff;
+}
+
+.welcome__link {
+    padding: 10px 30px;
+}
+
+.welcome__img {
+    max-width: 284px;
+}
+
+/* ABOUT */
+.about {}
+
+.about__container {}
+
+.content-text {
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.about__text {
+    margin-bottom: 53px;
+}
+
+.about__images {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.about__img {
+    border-radius: 20px;
+    opacity: 0.7;
+    width: clamp(343px, 48vw, 405px);
+}
+
+/* GAMES */
+.games {}
+
+.games__container {}
+
+.games__content-text {
+    margin-bottom: 36px;
+}
+
+.games-carousel {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.games-carousel__inner {
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.game-link {
+    display: block;
+    width: 235px;
+    height: 280px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    transition: scale 0.3s;
+}
+
+.game-link:hover {
+    scale: 1.03;
+}
+
+.game-link__img {
+    opacity: 0.38;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: opacity 0.3s;
+}
+
+.game-link__img:hover {
+    opacity: 1;
+}
+
+.game-link__desc {
+    position: absolute;
+    bottom: 27px;
+    left: 23px;
+    font-size: 24px;
+}
+
+.games-carousel__controls {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 5px;
+}
+
+.games-carousel__control {
+    padding: 0px;
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.games-carousel__control path {
+    transition: stroke 0.3s;
+}
+
+.games-carousel__control:hover path {
+    stroke: #79a8ff;
+}
+
+.games-carousel__controls--prev {}
+
+.games-carousel__indicators {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.games-carousel__indicator {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #020F2C;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.games-carousel__indicator.active {
+    width: 16px;
+    height: 16px;
+    background-color: #082872;
+}
+
+.games-carousel__indicator::before {
+    content: "";
+    position: absolute;
+    border: 1px solid transparent;
+    width: 120%;
+    height: 120%;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: border-color 0.3s;
+}
+
+.games-carousel__indicator:hover::before {
+    border-color: #fff;
 }
